@@ -1,0 +1,102 @@
+
+#main-div{
+    position: absolute;
+    top:0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(81, 21, 116);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ #second-div{
+        width: 32vw;
+        height: 85vh;
+        background-color: white;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 1rem;
+          }
+    .login-logo{
+      color: black;
+    }
+          
+.f-data{
+  margin-bottom: 1rem;
+  width: 20vw;
+  height: 5vh;
+  outline: none;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom:1px solid black;
+}
+.error-massege{
+  color: red;
+  position: relative;
+  top:-1rem;
+  width: 20vw;
+}
+#email{
+  margin-top: 1.5rem;
+}
+
+
+input::placeholder { 
+color:rgba(0, 0, 0, 0.541);
+font-weight: 3px;
+padding: 10px;
+}
+#but{
+  width: 15rem;
+padding: 10px;
+border: none;
+outline: none;
+border-radius: 10px;
+background-color: rgb(24, 140, 185);}
+#but:hover{ 
+background-color: rgb(146, 64, 64);
+
+}
+.input-type{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+h1{
+color: rgb(204, 76, 76);
+text-shadow: 2px 2px 1px black;
+width: auto;
+height: auto;
+}
+input[type=text],input[type=email],input[type=mobile],input[type=password] {
+font-size: inherit;
+}
+@media(max-width:700px){
+  #second-div{
+    width: 80vw;
+    height: 80vh;
+  }
+  .f-data{
+    width: 50vw;
+  }
+  #but{
+    width: 10rem;
+  }
+}
+@media(max-width:900px){
+  #second-div{
+    width: 80vw;
+    height: 80vh;
+  }
+  .f-data{
+    width: 60vw;
+  }
+  #but{
+    width: 10rem;
+  }
+}
